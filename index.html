@@ -91,7 +91,7 @@
                     <h3>PHP</h3>
                 </div>
                 <div class="skill-card">
-                    <img src="image/codeigniter-logo-png-transparent.png" width="50" height="50"></i>
+                    <img src="image/codeigniter-logo-png-transparent.png" width="50" height="50" alt="CodeIgniter">
                     <h3>Codeigniter</h3>
                 </div>
                 <div class="skill-card">
@@ -103,11 +103,11 @@
                     <h3>Figma</h3>
                 </div>
                 <div class="skill-card">
-                    <img src="image/sotosop.png" width="50" height="50">
+                    <img src="image/sotosop.png" width="50" height="50" alt="Adobe Photoshop">
                     <h3>Adobe Photoshop</h3>
                 </div>
                 <div class="skill-card">
-                    <img src="image/premiere.png" width="50" height="50">
+                    <img src="image/premiere.png" width="50" height="50" alt="Adobe Premiere Pro">
                     <h3>Adobe Premiere Pro</h3>
                 </div>
                 <div class="skill-card">
@@ -115,158 +115,200 @@
                     <h3>MySQL</h3>
                 </div>
                 <div class="skill-card">
-                    <img src="image/corel.png" width="50" height="50">
+                    <img src="image/corel.png" width="50" height="50" alt="CorelDRAW">
                     <h3>corelDRAW</h3>
                 </div>
                 <div class="skill-card">
-                    <img src="image/canva.png" width="50" height="50">
+                    <img src="image/canva.png" width="50" height="50" alt="Canva">
                     <h3>Canva</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section - Gallery -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title" data-translate="projects-title">Proyek Saya</h2>
-            <div class="slider-container">
-                <div class="slider">
-                    <!-- Slide 1: UI Kerajinan Tradisional -->
-                    <div class="slide banner-style active">
-                        <div class="slide-image">
-                            <img src="image/uix kerajinan tradisional.png" alt="UI/UX Kerajinan Tradisional">
-                        </div>
-                        <div class="slide-content">
-                            <h3 data-translate="project-craft-title">UI/UX Kerajinan Tradisional</h3>
-                            <p data-translate="project-craft-desc">Desain antarmuka aplikasi untuk promosi kerajinan tradisional dengan konsep modern yang mempertahankan nilai budaya.</p>
-                            <div class="project-tech">
-                                <span>Figma</span>
-                            </div>
+            
+            <!-- Project filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-translate="filter-all">Semua</button>
+                <button class="filter-btn" data-filter="ui-ux" data-translate="filter-ui-ux">UI/UX</button>
+                <button class="filter-btn" data-filter="web" data-translate="filter-web">Website</button>
+                <button class="filter-btn" data-filter="design" data-translate="filter-design">Desain</button>
+            </div>
+            
+            <!-- Optional search box -->
+            <div class="project-search-container">
+                <input type="text" id="project-search" class="project-search" data-translate="search-placeholder" placeholder="Cari proyek...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            
+            <div class="projects-gallery" id="projects-gallery">
+                <!-- Project 1: UI Kerajinan Tradisional -->
+                <div class="project-card" data-category="ui-ux">
+                    <div class="project-image">
+                        <img src="image/uix kerajinan tradisional.png" alt="UI/UX Kerajinan Tradisional">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project-craft-title">UI/UX Kerajinan Tradisional</h3>
+                        <p data-translate="project-craft-desc">Desain antarmuka aplikasi untuk promosi kerajinan tradisional dengan konsep modern yang mempertahankan nilai budaya.</p>
+                        <div class="project-tech">
+                            <span data-translate="tech-figma">Figma</span>
                         </div>
                     </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Slide 2: UI Pemesanan Makanan -->
-                    <div class="slide">
-                        <div class="slide-image">
-                            <img src="image/uix makanan.png" alt="UI/UX Pemesanan Makanan">
-                        </div>
-                        <div class="slide-content">
-                            <h3 data-translate="project-food-title">UI/UX Pemesanan Makanan</h3>
-                            <p data-translate="project-food-desc">Aplikasi pemesanan makanan dengan antarmuka yang user-friendly dan proses checkout yang mudah.</p>
-                            <div class="project-tech">
-                                <span>Figma</span>
-                            </div>
+                <!-- Project 2: UI Pemesanan Makanan -->
+                <div class="project-card" data-category="ui-ux">
+                    <div class="project-image">
+                        <img src="image/uix makanan.png" alt="UI/UX Pemesanan Makanan">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project-food-title">UI/UX Pemesanan Makanan</h3>
+                        <p data-translate="project-food-desc">Aplikasi pemesanan makanan dengan antarmuka yang user-friendly dan proses checkout yang mudah.</p>
+                        <div class="project-tech">
+                            <span data-translate="tech-figma">Figma</span>
                         </div>
                     </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Slide 3: UI Website Modifikasi Mobil -->
-                    <div class="slide">
-                        <div class="slide-image">
-                            <img src="image/uix website.png" alt="UI/UX Website Modifikasi Mobil">
-                        </div>
-                        <div class="slide-content">
-                            <h3 data-translate="project-car-title">UI/UX Website Modifikasi Mobil</h3>
-                            <p data-translate="project-car-desc">Website untuk layanan modifikasi mobil dengan galeri showcase dan sistem booking online.</p>
-                            <div class="project-tech">
-                                <span>Figma</span>
-                            </div>
+                <!-- Project 3: UI Website Modifikasi Mobil -->
+                <div class="project-card" data-category="ui-ux">
+                    <div class="project-image">
+                        <img src="image/uix website.png" alt="UI/UX Website Modifikasi Mobil">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project-car-title">UI/UX Website Modifikasi Mobil</h3>
+                        <p data-translate="project-car-desc">Website untuk layanan modifikasi mobil dengan galeri showcase dan sistem booking online.</p>
+                        <div class="project-tech">
+                            <span data-translate="tech-figma">Figma</span>
                         </div>
                     </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Slide 4: Banner Hari Santri -->
-                    <div class="slide banner-style">
-                        <div class="slide-image">
-                            <img src="image/BANNER HARI SANTRI MTS.png" alt="Banner Hari Santri">
-                        </div>
-                        <div class="slide-content">
-                            <h3 data-translate="project-banner-title">Desain Banner</h3>
-                            <p data-translate="project-banner-desc">Desain banner untuk peringatan Hari Santri dengan konsep modern dan religius.</p>
-                            <div class="project-tech">
-                                <span>Adobe Photoshop</span>
-                            </div>
+                <!-- Project 4: Banner Hari Santri -->
+                <div class="project-card banner-style" data-category="design">
+                    <div class="project-image">
+                        <img src="image/BANNER HARI SANTRI MTS.png" alt="Banner Hari Santri">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project-banner-title">Desain Banner</h3>
+                        <p data-translate="project-banner-desc">Desain banner untuk peringatan Hari Santri dengan konsep modern dan religius.</p>
+                        <div class="project-tech">
+                            <span data-translate="tech-photoshop">Adobe Photoshop</span>
                         </div>
                     </div>
-                    
-                    <!-- Slide 5: UI Design Figma -->
-                    <div class="slide">
-                        <div class="slide-image">
-                            <img src="image/ui figma.PNG" alt="UI Design Figma">
-                        </div>
-                        <div class="slide-content">
-                            <h3 data-translate="project-ui-title">UI/UX Design</h3>
-                            <p data-translate="project-ui-desc">Perancangan antarmuka pengguna yang intuitif dan modern menggunakan Figma.</p>
-                            <div class="project-tech">
-                                <span>Figma</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 6: Poster Ceres -->
-                    <div class="slide">
-                        <div class="slide-image">
-                            <img src="image/ceres.png" alt="Poster Design">
-                        </div>
-                        <div class="slide-content">
-                            <h3 data-translate="project-poster-title">Poster</h3>
-                            <p data-translate="project-poster-desc">Desain poster promosi dengan visual yang menarik dan informatif.</p>
-                            <div class="project-tech">
-                                <span>Adobe Photoshop</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 7: Website Development -->
-                    <div class="slide">
-                        <div class="slide-image">
-                            <img src="image/web.PNG" alt="Website Development">
-                        </div>
-                        <div class="slide-content">
-                            <h3 data-translate="project-web-title">Website</h3>
-                            <p data-translate="project-web-desc">Pengembangan aplikasi web fullstack dengan fitur lengkap dan responsif.</p>
-                            <div class="project-tech">
-                                <span>Codeigniter</span>
-                                <span>PHP</span>
-                                <span>Javascript</span>
-                                <span>MySQL</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 8: Poster AOS -->
-                    <div class="slide">
-                        <div class="slide-image">
-                            <img src="image/aos.png" alt="Poster Design 2">
-                        </div>
-                        <div class="slide-content">
-                            <h3 data-translate="project-poster2-title">Poster</h3>
-                            <p data-translate="project-poster2-desc">Desain poster kreatif dengan konsep yang unik dan eye-catching.</p>
-                            <div class="project-tech">
-                                <span>Adobe Photoshop</span>
-                            </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Navigation Arrows -->
-                <button class="slider-btn prev" id="prevBtn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="slider-btn next" id="nextBtn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+                <!-- Project 5: UI Design Figma -->
+                <div class="project-card" data-category="ui-ux">
+                    <div class="project-image">
+                        <img src="image/ui figma.PNG" alt="UI Design Figma">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project-ui-title">UI/UX Design</h3>
+                        <p data-translate="project-ui-desc">Perancangan antarmuka pengguna yang intuitif dan modern menggunakan Figma.</p>
+                        <div class="project-tech">
+                            <span data-translate="tech-figma">Figma</span>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6: Poster Ceres -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="image/ceres.png" alt="Poster Design">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project-poster-title">Poster</h3>
+                        <p data-translate="project-poster-desc">Desain poster promosi dengan visual yang menarik dan informatif.</p>
+                        <div class="project-tech">
+                            <span data-translate="tech-photoshop">Adobe Photoshop</span>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Website Development -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="image/web.PNG" alt="Website Development">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project-web-title">Website</h3>
+                        <p data-translate="project-web-desc">Pengembangan aplikasi web fullstack dengan fitur lengkap dan responsif.</p>
+                        <div class="project-tech">
+                            <span data-translate="tech-codeigniter">CodeIgniter</span>
+                            <span data-translate="tech-php">PHP</span>
+                            <span data-translate="tech-javascript">JavaScript</span>
+                            <span data-translate="tech-mysql">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Poster AOS -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="image/aos.png" alt="Poster Design 2">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project-poster2-title">Poster</h3>
+                        <p data-translate="project-poster2-desc">Desain poster kreatif dengan konsep yang unik dan eye-catching.</p>
+                        <div class="project-tech">
+                            <span data-translate="tech-photoshop">Adobe Photoshop</span>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <!-- Dots Indicator -->
-            <div class="slider-dots">
-                <span class="dot active" data-slide="0"></span>
-                <span class="dot" data-slide="1"></span>
-                <span class="dot" data-slide="2"></span>
-                <span class="dot" data-slide="3"></span>
-                <span class="dot" data-slide="4"></span>
-                <span class="dot" data-slide="5"></span>
-                <span class="dot" data-slide="6"></span>
-                <span class="dot" data-slide="7"></span>
+            <!-- No results message -->
+            <div id="no-results" class="no-results" style="display: none;">
+                <div class="no-results-content">
+                    <i class="fas fa-search"></i>
+                    <h3 data-translate="search-no-results">Tidak ada proyek yang ditemukan.</h3>
+                    <p>Coba kata kunci yang berbeda atau pilih kategori lain.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -294,12 +336,12 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/Anantarafi"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/irsyada-rafi-ananta-80635a324"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/rafnantagram/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Anantarafi" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/irsyada-rafi-ananta-80635a324" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/rafnantagram/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form">
                     <input type="text" data-translate="form-name" placeholder="Nama Anda" required>
                     <input type="email" data-translate="form-email" placeholder="Email Anda" required>
                     <textarea data-translate="form-message" placeholder="Pesan Anda" rows="5" required></textarea>
@@ -315,6 +357,14 @@
             <p data-translate="footer-text">&copy; 2025 Irsyada Rafi Ananta. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p data-translate="loading">Memuat...</p>
+        </div>
+    </div>
 
     <script src="translations.js"></script>
     <script src="script.js"></script>

@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-translate="page-title">Portofolio - Irsyada Rafi Ananta</title>
-    <meta name="description" data-translate="meta-description" content="Portfolio Irsyada Rafi Ananta - Graphic Design & UI/UX Designer dengan pengalaman dalam pengembangan web dan desain digital">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" data-translate="meta-description" content="Portfolio Irsyada Rafi Ananta - Graphic Design & UI/UX Designer dengan pengalaman dalam pengembangan web dan desain digital" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p data-translate="loading">Memuat...</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -24,32 +32,29 @@
                 <a href="#contact" class="nav-link" data-translate="nav-contact">Kontak</a>
             </div>
             <div class="nav-actions">
-                <!-- Language Switcher -->
-                <div class="language-switcher">
-                    <button id="language-toggle" class="lang-btn" title="Switch Language">
-                        <span class="flag-icon">🇮🇩</span>
-                        <span class="lang-text">ID</span>
-                    </button>
-                </div>
+                <button id="language-toggle" class="lang-btn" title="Switch Language">
+                    <span class="flag-icon">🇮🇩</span>
+                    <span class="lang-text">ID</span>
+                </button>
                 <div class="nav-toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span data-translate="hero-greeting">Halo, Saya</span> 
+                    <span data-translate="hero-greeting">Halo, Saya</span>
                     <span class="highlight">Irsyada Rafi Ananta</span>
                 </h1>
                 <p class="hero-subtitle" data-translate="hero-role">Graphic Design & UI/UX Designer</p>
-                <p class="hero-description" data-translate="hero-description">Saya menciptakan pengalaman digital yang menakjubkan dengan desain yang menarik.</p>
+                <p class="hero-description" data-translate="hero-description">
+                    Saya menciptakan pengalaman digital yang menakjubkan dengan desain yang menarik.
+                </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary" data-translate="btn-view-projects">Lihat Proyek</a>
                     <a href="#contact" class="btn btn-secondary" data-translate="btn-contact-me">Hubungi Saya</a>
@@ -57,7 +62,7 @@
             </div>
             <div class="hero-image">
                 <div class="profile-shape">
-                    <img src="image/mypasfoto.png" alt="Irsyada Rafi Ananta">
+                    <img src="image/mypasfoto.png" alt="Irsyada Rafi Ananta" />
                     <div class="shape-overlay"></div>
                     <div class="floating-elements">
                         <div class="float-circle circle-1"></div>
@@ -69,205 +74,125 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title" data-translate="about-title">Tentang Saya</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p data-translate="about-description">Fresh graduate D3 Teknik Informatika dengan pengalaman magang sebagai Fullstack Developer. Terampil dalam pengembangan aplikasi web end-to-end menggunakan PHP, CodeIgniter, dan JavaScript. Memiliki semangat tinggi dalam merancang antarmuka (UI/UX) yang intuitif dan fungsional menggunakan Figma untuk memberikan pengalaman pengguna terbaik.</p>
+                    <p data-translate="about-description">
+                        Fresh graduate D3 Teknik Informatika dengan pengalaman magang sebagai Fullstack Developer.
+                        Terampil dalam pengembangan aplikasi web end-to-end menggunakan PHP, CodeIgniter, dan JavaScript.
+                        Memiliki semangat tinggi dalam merancang antarmuka (UI/UX) yang intuitif dan fungsional menggunakan
+                        Figma untuk memberikan pengalaman pengguna terbaik.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title" data-translate="skills-title">Keahlian</h2>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-php"></i>
-                    <h3>PHP</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="image/codeigniter-logo-png-transparent.png" width="50" height="50" alt="CodeIgniter">
-                    <h3>Codeigniter</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js-square"></i>
-                    <h3>Javascript</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-figma"></i>
-                    <h3>Figma</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="image/sotosop.png" width="50" height="50" alt="Adobe Photoshop">
-                    <h3>Adobe Photoshop</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="image/premiere.png" width="50" height="50" alt="Adobe Premiere Pro">
-                    <h3>Adobe Premiere Pro</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>MySQL</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="image/corel.png" width="50" height="50" alt="CorelDRAW">
-                    <h3>corelDRAW</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="image/canva.png" width="50" height="50" alt="Canva">
-                    <h3>Canva</h3>
-                </div>
+                <div class="skill-card"><i class="fab fa-php"></i><h3>PHP</h3></div>
+                <div class="skill-card"><img src="image/codeigniter-logo-png-transparent.png" width="50" height="50" alt="CodeIgniter"/><h3>CodeIgniter</h3></div>
+                <div class="skill-card"><i class="fab fa-js-square"></i><h3>Javascript</h3></div>
+                <div class="skill-card"><i class="fab fa-figma"></i><h3>Figma</h3></div>
+                <div class="skill-card"><img src="image/sotosop.png" width="50" height="50" alt="Photoshop"/><h3>Adobe Photoshop</h3></div>
+                <div class="skill-card"><img src="image/premiere.png" width="50" height="50" alt="Premiere"/><h3>Adobe Premiere</h3></div>
+                <div class="skill-card"><i class="fas fa-database"></i><h3>MySQL</h3></div>
+                <div class="skill-card"><img src="image/corel.png" width="50" height="50" alt="CorelDRAW"/><h3>CorelDRAW</h3></div>
+                <div class="skill-card"><img src="image/canva.png" width="50" height="50" alt="Canva"/><h3>Canva</h3></div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section - Gallery -->
+    <!-- Projects -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title" data-translate="projects-title">Proyek Saya</h2>
-            
-            <!-- Project filters -->
+
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all" data-translate="filter-all">Semua</button>
                 <button class="filter-btn" data-filter="ui-ux" data-translate="filter-ui-ux">UI/UX</button>
                 <button class="filter-btn" data-filter="web" data-translate="filter-web">Website</button>
                 <button class="filter-btn" data-filter="design" data-translate="filter-design">Desain</button>
             </div>
-            
-            <!-- Optional search box -->
+
             <div class="project-search-container">
-                <input type="text" id="project-search" class="project-search" data-translate="search-placeholder" placeholder="Cari proyek...">
+                <input type="text" id="project-search" class="project-search" data-translate="search-placeholder" placeholder="Cari proyek..." />
                 <i class="fas fa-search search-icon"></i>
             </div>
-            
+
             <div class="projects-gallery" id="projects-gallery">
-                <!-- Project 1: UI Kerajinan Tradisional -->
+                <!-- Project cards (same structure, just changing content) -->
                 <div class="project-card" data-category="ui-ux">
-                    <div class="project-image">
-                        <img src="image/uix kerajinan tradisional.png" alt="UI/UX Kerajinan Tradisional">
-                    </div>
+                    <div class="project-image"><img src="image/uix kerajinan tradisional.png" alt="UI/UX Kerajinan Tradisional" /></div>
                     <div class="project-content">
                         <h3 data-translate="project-craft-title">UI/UX Kerajinan Tradisional</h3>
-                        <p data-translate="project-craft-desc">Desain antarmuka aplikasi untuk promosi kerajinan tradisional dengan konsep modern yang mempertahankan nilai budaya.</p>
-                        <div class="project-tech">
-                            <span data-translate="tech-figma">Figma</span>
-                        </div>
+                        <p data-translate="project-craft-desc">Desain antarmuka aplikasi untuk promosi kerajinan tradisional...</p>
+                        <div class="project-tech"><span data-translate="tech-figma">Figma</span></div>
                     </div>
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
-                        </div>
-                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
                 </div>
 
-                <!-- Project 2: UI Pemesanan Makanan -->
                 <div class="project-card" data-category="ui-ux">
-                    <div class="project-image">
-                        <img src="image/uix makanan.png" alt="UI/UX Pemesanan Makanan">
-                    </div>
+                    <div class="project-image"><img src="image/uix makanan.png" alt="UI/UX Pemesanan Makanan" /></div>
                     <div class="project-content">
                         <h3 data-translate="project-food-title">UI/UX Pemesanan Makanan</h3>
-                        <p data-translate="project-food-desc">Aplikasi pemesanan makanan dengan antarmuka yang user-friendly dan proses checkout yang mudah.</p>
-                        <div class="project-tech">
-                            <span data-translate="tech-figma">Figma</span>
-                        </div>
+                        <p data-translate="project-food-desc">Aplikasi pemesanan makanan dengan antarmuka yang user-friendly...</p>
+                        <div class="project-tech"><span data-translate="tech-figma">Figma</span></div>
                     </div>
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
-                        </div>
-                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
                 </div>
 
-                <!-- Project 3: UI Website Modifikasi Mobil -->
                 <div class="project-card" data-category="ui-ux">
-                    <div class="project-image">
-                        <img src="image/uix website.png" alt="UI/UX Website Modifikasi Mobil">
-                    </div>
+                    <div class="project-image"><img src="image/uix website.png" alt="UI/UX Website Modifikasi Mobil" /></div>
                     <div class="project-content">
                         <h3 data-translate="project-car-title">UI/UX Website Modifikasi Mobil</h3>
-                        <p data-translate="project-car-desc">Website untuk layanan modifikasi mobil dengan galeri showcase dan sistem booking online.</p>
-                        <div class="project-tech">
-                            <span data-translate="tech-figma">Figma</span>
-                        </div>
+                        <p data-translate="project-car-desc">Website untuk layanan modifikasi mobil dengan galeri showcase...</p>
+                        <div class="project-tech"><span data-translate="tech-figma">Figma</span></div>
                     </div>
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
-                        </div>
-                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
                 </div>
 
-                <!-- Project 4: Banner Hari Santri -->
                 <div class="project-card banner-style" data-category="design">
-                    <div class="project-image">
-                        <img src="image/BANNER HARI SANTRI MTS.png" alt="Banner Hari Santri">
-                    </div>
+                    <div class="project-image"><img src="image/BANNER HARI SANTRI MTS.png" alt="Banner Hari Santri" /></div>
                     <div class="project-content">
                         <h3 data-translate="project-banner-title">Desain Banner</h3>
-                        <p data-translate="project-banner-desc">Desain banner untuk peringatan Hari Santri dengan konsep modern dan religius.</p>
-                        <div class="project-tech">
-                            <span data-translate="tech-photoshop">Adobe Photoshop</span>
-                        </div>
+                        <p data-translate="project-banner-desc">Desain banner untuk peringatan Hari Santri...</p>
+                        <div class="project-tech"><span data-translate="tech-photoshop">Adobe Photoshop</span></div>
                     </div>
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 5: UI Design Figma -->
-                <div class="project-card" data-category="ui-ux">
-                    <div class="project-image">
-                        <img src="image/ui figma.PNG" alt="UI Design Figma">
-                    </div>
-                    <div class="project-content">
-                        <h3 data-translate="project-ui-title">UI/UX Design</h3>
-                        <p data-translate="project-ui-desc">Perancangan antarmuka pengguna yang intuitif dan modern menggunakan Figma.</p>
-                        <div class="project-tech">
-                            <span data-translate="tech-figma">Figma</span>
-                        </div>
-                    </div>
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 6: Poster Ceres -->
-                <div class="project-card" data-category="design">
-                    <div class="project-image">
-                        <img src="image/ceres.png" alt="Poster Design">
-                    </div>
-                    <div class="project-content">
-                        <h3 data-translate="project-poster-title">Poster</h3>
-                        <p data-translate="project-poster-desc">Desain poster promosi dengan visual yang menarik dan informatif.</p>
-                        <div class="project-tech">
-                            <span data-translate="tech-photoshop">Adobe Photoshop</span>
-                        </div>
-                    </div>
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
-                        </div>
-                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
                 </div>
 
-                <!-- Project 7: Website Development -->
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="image/web.PNG" alt="Website Development">
+                <div class="project-card" data-category="ui-ux">
+                    <div class="project-image"><img src="image/ui figma.PNG" alt="UI Design Figma" /></div>
+                    <div class="project-content">
+                        <h3 data-translate="project-ui-title">UI/UX Design</h3>
+                        <p data-translate="project-ui-desc">Perancangan antarmuka pengguna yang intuitif...</p>
+                        <div class="project-tech"><span data-translate="tech-figma">Figma</span></div>
                     </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image"><img src="image/ceres.png" alt="Poster Ceres" /></div>
+                    <div class="project-content">
+                        <h3 data-translate="project-poster-title">Poster</h3>
+                        <p data-translate="project-poster-desc">Desain poster promosi dengan visual menarik...</p>
+                        <div class="project-tech"><span data-translate="tech-photoshop">Adobe Photoshop</span></div>
+                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image"><img src="image/web.PNG" alt="Website Development" /></div>
                     <div class="project-content">
                         <h3 data-translate="project-web-title">Website</h3>
-                        <p data-translate="project-web-desc">Pengembangan aplikasi web fullstack dengan fitur lengkap dan responsif.</p>
+                        <p data-translate="project-web-desc">Pengembangan aplikasi web fullstack...</p>
                         <div class="project-tech">
                             <span data-translate="tech-codeigniter">CodeIgniter</span>
                             <span data-translate="tech-php">PHP</span>
@@ -275,45 +200,31 @@
                             <span data-translate="tech-mysql">MySQL</span>
                         </div>
                     </div>
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
-                        </div>
-                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
                 </div>
 
-                <!-- Project 8: Poster AOS -->
                 <div class="project-card" data-category="design">
-                    <div class="project-image">
-                        <img src="image/aos.png" alt="Poster Design 2">
-                    </div>
+                    <div class="project-image"><img src="image/aos.png" alt="Poster AOS" /></div>
                     <div class="project-content">
                         <h3 data-translate="project-poster2-title">Poster</h3>
-                        <p data-translate="project-poster2-desc">Desain poster kreatif dengan konsep yang unik dan eye-catching.</p>
-                        <div class="project-tech">
-                            <span data-translate="tech-photoshop">Adobe Photoshop</span>
-                        </div>
+                        <p data-translate="project-poster2-desc">Desain poster kreatif dengan konsep unik...</p>
+                        <div class="project-tech"><span data-translate="tech-photoshop">Adobe Photoshop</span></div>
                     </div>
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a>
-                        </div>
-                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
                 </div>
             </div>
-            
-            <!-- No results message -->
-            <div id="no-results" class="no-results" style="display: none;">
+
+            <div id="no-results" class="no-results" style="display:none;">
                 <div class="no-results-content">
                     <i class="fas fa-search"></i>
                     <h3 data-translate="search-no-results">Tidak ada proyek yang ditemukan.</h3>
-                    <p>Coba kata kunci yang berbeda atau pilih kategori lain.</p>
+                    <p data-translate="search-try-different">Coba kata kunci yang berbeda atau pilih kategori lain.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title" data-translate="contact-title">Hubungi Saya</h2>
@@ -322,28 +233,19 @@
                     <h3 data-translate="contact-subtitle">Mari Berkolaborasi!</h3>
                     <p data-translate="contact-description">Saya selalu tertarik dengan proyek-proyek menarik. Mari diskusikan bagaimana kita bisa bekerja sama.</p>
                     <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>irsyadarafi@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+62 851 7993 6424</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Dsn Krajan Banyukuning, RT.1/RW.1,Banyukuning, Kab.Semarang, Bandungan, Jawa Tengah,50663</span>
-                        </div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i><span>irsyadarafi@gmail.com</span></div>
+                        <div class="contact-item"><i class="fas fa-phone"></i><span>+62 851 7993 6424</span></div>
+                        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Bandungan, Jawa Tengah</span></div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/Anantarafi" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/irsyada-rafi-ananta-80635a324" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/rafnantagram/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Anantarafi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/irsyada-rafi-ananta-80635a324" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/rafnantagram/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <form class="contact-form" id="contact-form">
-                    <input type="text" data-translate="form-name" placeholder="Nama Anda" required>
-                    <input type="email" data-translate="form-email" placeholder="Email Anda" required>
+                    <input type="text" data-translate="form-name" placeholder="Nama Anda" required />
+                    <input type="email" data-translate="form-email" placeholder="Email Anda" required />
                     <textarea data-translate="form-message" placeholder="Pesan Anda" rows="5" required></textarea>
                     <button type="submit" class="btn btn-primary" data-translate="btn-send">Kirim Pesan</button>
                 </form>
@@ -358,13 +260,56 @@
         </div>
     </footer>
 
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="loading-content">
-            <div class="loading-spinner"></div>
-            <p data-translate="loading">Memuat...</p>
+    <!-- Modal -->
+    <div id="project-modal" class="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title" class="modal-title"></h3>
+                <button id="modal-close" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modal-image" class="modal-image" src="" alt="" />
+                    <div class="image-zoom-controls">
+                        <button id="zoom-in" class="zoom-btn" title="Zoom In"><i class="fas fa-search-plus"></i></button>
+                        <button id="zoom-out" class="zoom-btn" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
+                        <button id="reset-zoom" class="zoom-btn" title="Reset Zoom"><i class="fas fa-expand-arrows-alt"></i></button>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="project-description">
+                        <h4 data-translate="project-description-title">Deskripsi Proyek</h4>
+                        <p id="modal-description"></p>
+                    </div>
+                    <div class="project-technologies">
+                        <h4 data-translate="project-technologies">Teknologi yang Digunakan</h4>
+                        <div id="modal-tech" class="tech-tags"></div>
+                    </div>
+                    <div class="project-category">
+                        <h4 data-translate="project-category">Kategori</h4>
+                        <span id="modal-category" class="category-tag"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-actions">
+                    <button id="download-image" class="btn btn-secondary">
+                        <i class="fas fa-download"></i><span data-translate="btn-download">Download</span>
+                    </button>
+                    <button id="share-project" class="btn btn-secondary">
+                        <i class="fas fa-share"></i><span data-translate="btn-share">Share</span>
+                    </button>
+                    <button id="close-modal" class="btn btn-primary"><span data-translate="btn-close">Tutup</span></button>
+                </div>
+            </div>
         </div>
+        <div class="modal-backdrop"></div>
     </div>
+
+    <!-- Back to top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
     <script src="translations.js"></script>
     <script src="script.js"></script>

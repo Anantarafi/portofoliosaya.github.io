@@ -7,28 +7,28 @@ const translations = {
         // Meta
         'page-title': 'Portofolio - Irsyada Rafi Ananta',
         'meta-description': 'Portfolio Irsyada Rafi Ananta - Graphic Design & UI/UX Designer dengan pengalaman dalam pengembangan web dan desain digital',
-        
+
         // Navigation
         'nav-home': 'Beranda',
         'nav-about': 'Tentang',
         'nav-skills': 'Keahlian',
         'nav-projects': 'Proyek',
         'nav-contact': 'Kontak',
-        
+
         // Hero
         'hero-greeting': 'Halo, Saya',
         'hero-role': 'Graphic Design & UI/UX Designer',
         'hero-description': 'Saya menciptakan pengalaman digital yang menakjubkan dengan desain yang menarik.',
         'btn-view-projects': 'Lihat Proyek',
         'btn-contact-me': 'Hubungi Saya',
-        
+
         // About
         'about-title': 'Tentang Saya',
         'about-description': 'Fresh graduate D3 Teknik Informatika dengan pengalaman magang sebagai Fullstack Developer. Terampil dalam pengembangan aplikasi web end-to-end menggunakan PHP, CodeIgniter, dan JavaScript. Memiliki semangat tinggi dalam merancang antarmuka (UI/UX) yang intuitif dan fungsional menggunakan Figma untuk memberikan pengalaman pengguna terbaik.',
-        
+
         // Skills
         'skills-title': 'Keahlian',
-        
+
         // Projects
         'projects-title': 'Proyek Saya',
         'filter-all': 'Semua',
@@ -39,7 +39,7 @@ const translations = {
         'search-no-results': 'Tidak ada proyek yang ditemukan.',
         'search-try-different': 'Coba kata kunci yang berbeda atau pilih kategori lain.',
         'btn-view-details': 'Lihat Detail',
-        
+
         // Canva Projects
         'project-canva1-title': 'Desain Social Media',
         'project-canva1-desc': 'Desain konten iklan makanan untuk media sosial dengan tipografi tegas dan layout responsif.',
@@ -53,7 +53,7 @@ const translations = {
         'project-canva5-desc': 'Mockup grafis streetwear bertema anime dengan komposisi kontras dan penekanan pada identitas brand.',
         'project-canva6-title': 'Desain Proposal',
         'project-canva6-desc': 'Template proposal perusahaan yang konsisten secara visual, siap cetak dan presentasi.',
-        
+
         // UI/UX Projects
         'project-craft-title': 'UI/UX Kerajinan Tradisional',
         'project-craft-desc': 'Desain antarmuka aplikasi untuk promosi kerajinan tradisional dengan fokus pada user experience.',
@@ -63,17 +63,23 @@ const translations = {
         'project-car-desc': 'Website untuk layanan modifikasi mobil dengan galeri showcase yang menarik.',
         'project-ui-title': 'UI/UX Design',
         'project-ui-desc': 'Perancangan antarmuka pengguna yang intuitif dengan desain modern dan clean.',
-        
-        // Web & Design Projects
+
+        // Web Project
         'project-web-title': 'Website Fullstack',
         'project-web-desc': 'Pengembangan aplikasi web fullstack dengan fitur lengkap dan performa optimal.',
+
+        // Design Project (Banner)
         'project-banner-title': 'Banner Hari Santri',
         'project-banner-desc': 'Desain banner untuk peringatan Hari Santri dengan konsep yang bermakna.',
-        'project-poster-title': 'Poster Promosi ',
-        'project-poster-desc': 'Desain poster promosi dengan visual menarik dan pesan yang komunikatif.',
-        'project-poster2-title': 'Poster AOS',
-        'project-poster2-desc': 'Desain poster kreatif dengan konsep unik dan komposisi yang balance.',
-        
+
+        // Design Posters (dibedakan)
+        'project-poster-ceres-title': 'Poster Pemain (Ceres)',
+        'project-poster-ceres-desc': 'Desain poster pemain dengan visual menarik dan pesan yang komunikatif.',
+        'project-poster-22b-title': 'Poster 22B STI',
+        'project-poster-22b-desc': 'Poster kelas/komunitas dengan komposisi rapi, fokus pada identitas dan keterbacaan.',
+        'project-poster-nsx-title': 'Poster Promosi (NSX)',
+        'project-poster-nsx-desc': 'Poster promosi bertema otomotif dengan warna kontras dan elemen visual yang dinamis.',
+
         // Technologies
         'tech-figma': 'Figma',
         'tech-canva': 'Canva',
@@ -82,7 +88,7 @@ const translations = {
         'tech-php': 'PHP',
         'tech-javascript': 'JavaScript',
         'tech-mysql': 'MySQL',
-        
+
         // Modal
         'project-description-title': 'Deskripsi Proyek',
         'project-technologies': 'Teknologi yang Digunakan',
@@ -90,7 +96,7 @@ const translations = {
         'btn-view-project': 'Lihat Project',
         'btn-share': 'Share',
         'btn-close': 'Tutup',
-        
+
         // Contact
         'contact-title': 'Hubungi Saya',
         'contact-subtitle': 'Mari Berkolaborasi!',
@@ -99,40 +105,40 @@ const translations = {
         'form-email': 'Email Anda',
         'form-message': 'Pesan Anda',
         'btn-send': 'Kirim Pesan',
-        
+
         // Footer
         'footer-text': '© 2025 Irsyada Rafi Ananta. All rights reserved.',
-        
+
         // Other
         'loading': 'Memuat...',
     },
-    
+
     en: {
         // Meta
         'page-title': 'Portfolio - Irsyada Rafi Ananta',
         'meta-description': 'Portfolio of Irsyada Rafi Ananta - Graphic Design & UI/UX Designer with experience in web development and digital design',
-        
+
         // Navigation
         'nav-home': 'Home',
         'nav-about': 'About',
         'nav-skills': 'Skills',
         'nav-projects': 'Projects',
         'nav-contact': 'Contact',
-        
+
         // Hero
         'hero-greeting': 'Hello, I\'m',
         'hero-role': 'Graphic Design & UI/UX Designer',
         'hero-description': 'I create stunning digital experiences with attractive and functional designs.',
         'btn-view-projects': 'View Projects',
         'btn-contact-me': 'Contact Me',
-        
+
         // About
         'about-title': 'About Me',
         'about-description': 'Fresh graduate of D3 Informatics Engineering with internship experience as a Fullstack Developer. Skilled in end-to-end web application development using PHP, CodeIgniter, and JavaScript. Passionate about designing intuitive and functional UI/UX with Figma to deliver great user experience.',
-        
+
         // Skills
         'skills-title': 'My Skills',
-        
+
         // Projects
         'projects-title': 'My Projects',
         'filter-all': 'All',
@@ -143,7 +149,7 @@ const translations = {
         'search-no-results': 'No projects found.',
         'search-try-different': 'Try different keywords or select another category.',
         'btn-view-details': 'View Details',
-        
+
         // Canva Projects
         'project-canva1-title': 'Social Media Design',
         'project-canva1-desc': 'Food advertising content design for social media with bold typography and responsive layout.',
@@ -157,7 +163,7 @@ const translations = {
         'project-canva5-desc': 'Anime-themed streetwear graphic mockup with contrast composition and brand identity emphasis.',
         'project-canva6-title': 'Proposal Design',
         'project-canva6-desc': 'Visually consistent company proposal template, ready for print and presentation.',
-        
+
         // UI/UX Projects
         'project-craft-title': 'Traditional Craft UI/UX',
         'project-craft-desc': 'Application interface design for promoting traditional crafts with focus on user experience.',
@@ -167,17 +173,23 @@ const translations = {
         'project-car-desc': 'Website for car modification services with attractive showcase gallery.',
         'project-ui-title': 'UI/UX Design',
         'project-ui-desc': 'Intuitive user interface design with modern and clean aesthetics.',
-        
-        // Web & Design Projects
+
+        // Web Project
         'project-web-title': 'Fullstack Website',
         'project-web-desc': 'Fullstack web application development with complete features and optimal performance.',
+
+        // Design Project (Banner)
         'project-banner-title': 'Santri Day Banner',
-        'project-banner-desc': 'Banner design for Santri Day commemoration with meaningful concept.',
-        'project-poster-title': 'Promotion Poster',
-        'project-poster-desc': 'Promotional poster with attractive visuals and communicative message.',
-        'project-poster2-title': 'AOS Poster',
-        'project-poster2-desc': 'Creative poster with unique concept and balanced composition.',
-        
+        'project-banner-desc': 'Banner design for Santri Day commemoration with a meaningful concept.',
+
+        // Design Posters (dibedakan)
+        'project-poster-ceres-title': 'Player Poster (Ceres)',
+        'project-poster-ceres-desc': 'Player poster design with attractive visuals and a clear message.',
+        'project-poster-22b-title': 'Poster 22B STI',
+        'project-poster-22b-desc': 'Class/community poster with a clean layout, focusing on identity and readability.',
+        'project-poster-nsx-title': 'Promotion Poster (NSX)',
+        'project-poster-nsx-desc': 'Automotive-themed promotional poster with strong contrast colors and dynamic visual elements.',
+
         // Technologies
         'tech-figma': 'Figma',
         'tech-canva': 'Canva',
@@ -186,7 +198,7 @@ const translations = {
         'tech-php': 'PHP',
         'tech-javascript': 'JavaScript',
         'tech-mysql': 'MySQL',
-        
+
         // Modal
         'project-description-title': 'Project Description',
         'project-technologies': 'Technologies Used',
@@ -194,7 +206,7 @@ const translations = {
         'btn-view-project': 'View Project',
         'btn-share': 'Share',
         'btn-close': 'Close',
-        
+
         // Contact
         'contact-title': 'Contact Me',
         'contact-subtitle': 'Let\'s Collaborate!',
@@ -203,10 +215,10 @@ const translations = {
         'form-email': 'Your Email',
         'form-message': 'Your Message',
         'btn-send': 'Send Message',
-        
+
         // Footer
         'footer-text': '© 2025 Irsyada Rafi Ananta. All rights reserved.',
-        
+
         // Other
         'loading': 'Loading...',
     }
@@ -225,7 +237,7 @@ class LanguageManager {
     detectLanguage() {
         const saved = localStorage.getItem('preferred-language');
         if (saved && translations[saved]) return saved;
-        
+
         const browser = navigator.language.slice(0, 2);
         return translations[browser] ? browser : 'id';
     }
@@ -238,7 +250,7 @@ class LanguageManager {
     setupSwitcher() {
         const btn = document.getElementById('language-toggle');
         if (!btn) return;
-        
+
         btn.addEventListener('click', () => {
             this.switchLanguage();
         });
@@ -247,9 +259,9 @@ class LanguageManager {
     switchLanguage() {
         const btn = document.getElementById('language-toggle');
         if (btn) btn.classList.add('loading');
-        
+
         const newLang = this.currentLanguage === 'id' ? 'en' : 'id';
-        
+
         setTimeout(() => {
             this.updateLanguage(newLang);
             if (btn) btn.classList.remove('loading');
@@ -258,7 +270,7 @@ class LanguageManager {
 
     updateLanguage(lang) {
         if (!translations[lang]) return;
-        
+
         this.currentLanguage = lang;
         localStorage.setItem('preferred-language', lang);
         document.documentElement.lang = lang;
@@ -267,9 +279,9 @@ class LanguageManager {
         document.querySelectorAll('[data-translate]').forEach(el => {
             const key = el.getAttribute('data-translate');
             const value = translations[lang][key];
-            
+
             if (!value) return;
-            
+
             if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
                 el.placeholder = value;
             } else {
@@ -286,7 +298,7 @@ class LanguageManager {
         // Update language button
         const flag = document.querySelector('.flag-icon');
         const text = document.querySelector('.lang-text');
-        
+
         if (flag && text) {
             if (lang === 'id') {
                 flag.textContent = '🇮🇩';

@@ -127,7 +127,7 @@
             </div>
 
             <div class="projects-gallery" id="projects-gallery">
-                
+
                 <!-- CANVA PROJECTS -->
                 <div class="project-card" data-category="design" data-link="https://www.canva.com/design/DAG1fL6i_7g/x_JclzxyN4SFQp1qPhdPgw/edit?utm_content=DAG1fL6i_7g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
                     <div class="project-image"><img src="image/ads food.png" alt="Desain Social Media" /></div>
@@ -260,12 +260,34 @@
                 <div class="project-card" data-category="design" data-link="#">
                     <div class="project-image"><img src="image/ceres.png" alt="Poster Ceres" /></div>
                     <div class="project-content">
-                        <h3 data-translate="project-poster-title">Poster Promosi </h3>
+                        <h3 data-translate="project-poster-title">Poster Pemain</h3>
                         <p data-translate="project-poster-desc">Desain poster promosi dengan visual menarik dan pesan yang komunikatif.</p>
                         <div class="project-tech"><span data-translate="tech-photoshop">Adobe Photoshop</span></div>
                     </div>
                     <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
                 </div>
+
+                <div class="project-card" data-category="design" data-link="#">
+                    <div class="project-image"><img src="image/poster 22b sti.png" alt="Poster 22b STI" /></div>
+                    <div class="project-content">
+                        <h3 data-translate="project-poster-title">Poster 22B ST</h3>
+                        <p data-translate="project-poster-desc">Desain poster promosi dengan visual menarik dan pesan yang komunikatif.</p>
+                        <div class="project-tech"><span data-translate="tech-photoshop">Adobe Photoshop</span></div>
+                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
+                </div>
+
+                    <div class="project-card" data-category="design" data-link="#">
+                    <div class="project-image"><img src="image/poster nsx.png" alt="Poster NSX" /></div>
+                    <div class="project-content">
+                        <h3 data-translate="project-poster-title">Poster Promosi</h3>
+                        <p data-translate="project-poster-desc">Desain poster promosi dengan visual menarik dan pesan yang komunikatif.</p>
+                        <div class="project-tech"><span data-translate="tech-photoshop">Canva</span></div>
+                    </div>
+                    <div class="project-overlay"><div class="project-links"><a href="#" class="project-btn" data-translate="btn-view-details">Lihat Detail</a></div></div>
+                </div>
+
+            </div>
 
             <div id="no-results" class="no-results" style="display:none;">
                 <div class="no-results-content">
@@ -313,57 +335,57 @@
         </div>
     </footer>
 
-<!-- Modal - STRUKTUR YANG BENAR -->
-<div id="project-modal" class="project-modal">
-    <div class="modal-backdrop"></div>
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 id="modal-title" class="modal-title"></h3>
-            <button id="modal-close" class="modal-close" aria-label="Close modal">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="modal-body">
-            <div class="modal-image-container">
-                <img id="modal-image" class="modal-image" src="" alt="" />
-                <div class="image-zoom-controls">
-                    <button id="zoom-in" class="zoom-btn" title="Zoom In"><i class="fas fa-search-plus"></i></button>
-                    <button id="zoom-out" class="zoom-btn" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
-                    <button id="reset-zoom" class="zoom-btn" title="Reset Zoom"><i class="fas fa-expand-arrows-alt"></i></button>
+    <!-- Modal -->
+    <div id="project-modal" class="project-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title" class="modal-title"></h3>
+                <button id="modal-close" class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modal-image" class="modal-image" src="" alt="" />
+                    <div class="image-zoom-controls">
+                        <button id="zoom-in" class="zoom-btn" title="Zoom In"><i class="fas fa-search-plus"></i></button>
+                        <button id="zoom-out" class="zoom-btn" title="Zoom Out"><i class="fas fa-search-minus"></i></button>
+                        <button id="reset-zoom" class="zoom-btn" title="Reset Zoom"><i class="fas fa-expand-arrows-alt"></i></button>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <div class="project-description">
+                        <h4 data-translate="project-description-title">Deskripsi Proyek</h4>
+                        <p id="modal-description"></p>
+                    </div>
+                    <div class="project-technologies">
+                        <h4 data-translate="project-technologies">Teknologi yang Digunakan</h4>
+                        <div id="modal-tech" class="tech-tags"></div>
+                    </div>
+                    <div class="project-category">
+                        <h4 data-translate="project-category">Kategori</h4>
+                        <span id="modal-category" class="category-tag"></span>
+                    </div>
                 </div>
             </div>
-            <div class="modal-details">
-                <div class="project-description">
-                    <h4 data-translate="project-description-title">Deskripsi Proyek</h4>
-                    <p id="modal-description"></p>
+            <div class="modal-footer">
+                <div class="modal-actions">
+                    <button id="view-project" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span data-translate="btn-view-project">Lihat Project</span>
+                    </button>
+                    <button id="share-project" class="btn btn-secondary">
+                        <i class="fas fa-share"></i>
+                        <span data-translate="btn-share">Share</span>
+                    </button>
+                    <button id="close-modal" class="btn btn-primary">
+                        <span data-translate="btn-close">Tutup</span>
+                    </button>
                 </div>
-                <div class="project-technologies">
-                    <h4 data-translate="project-technologies">Teknologi yang Digunakan</h4>
-                    <div id="modal-tech" class="tech-tags"></div>
-                </div>
-                <div class="project-category">
-                    <h4 data-translate="project-category">Kategori</h4>
-                    <span id="modal-category" class="category-tag"></span>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <div class="modal-actions">
-                <button id="view-project" class="btn btn-secondary">
-                    <i class="fas fa-external-link-alt"></i>
-                    <span data-translate="btn-view-project">Lihat Project</span>
-                </button>
-                <button id="share-project" class="btn btn-secondary">
-                    <i class="fas fa-share"></i>
-                    <span data-translate="btn-share">Share</span>
-                </button>
-                <button id="close-modal" class="btn btn-primary">
-                    <span data-translate="btn-close">Tutup</span>
-                </button>
             </div>
         </div>
     </div>
-</div>
 
     <!-- Back to top -->
     <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>

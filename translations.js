@@ -73,8 +73,8 @@ const translations = {
         'project-banner-desc': 'Desain banner untuk peringatan Hari Santri dengan konsep yang bermakna.',
 
         // Design Posters (dibedakan)
-        'project-poster-ceres-title': 'Poster Pemain (Ceres)',
-        'project-poster-ceres-desc': 'Desain poster pemain dengan visual menarik dan pesan yang komunikatif.',
+        'project-poster-ceres-title': 'Poster Pemain Sepak Bola',
+        'project-poster-ceres-desc': 'Desain poster pemain Sepak Bola dengan visual menarik.',
         'project-poster-22b-title': 'Poster 22B STI',
         'project-poster-22b-desc': 'Poster kelas/komunitas dengan komposisi rapi, fokus pada identitas dan keterbacaan.',
         'project-poster-nsx-title': 'Poster Promosi (NSX)',
@@ -183,8 +183,8 @@ const translations = {
         'project-banner-desc': 'Banner design for Santri Day commemoration with a meaningful concept.',
 
         // Design Posters (dibedakan)
-        'project-poster-ceres-title': 'Player Poster (Ceres)',
-        'project-poster-ceres-desc': 'Player poster design with attractive visuals and a clear message.',
+        'project-poster-ceres-title': 'Football Player Poster ',
+        'project-poster-ceres-desc': 'Football Player poster design with attractive visuals.',
         'project-poster-22b-title': 'Poster 22B STI',
         'project-poster-22b-desc': 'Class/community poster with a clean layout, focusing on identity and readability.',
         'project-poster-nsx-title': 'Promotion Poster (NSX)',
